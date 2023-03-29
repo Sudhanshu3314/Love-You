@@ -24,12 +24,12 @@
             margin: 4px auto;
         }
 
-        button {
+        input[type="button"] {
             margin: 16px 20px;
             font-size: 25px;
         }
 
-        button[onmouseover="No()"] {
+        input[onmouseover="No()"] {
             position: relative;
         }
     </style>
@@ -41,8 +41,8 @@
         <h1>I love you <span id="name"></span></h1>
 
         <div>
-            <button onclick="yes()">Accepted</button>
-            <button id="no" onmouseover="No()">Rejected</button>
+            <input type="button" onclick="yes()" value="Accepted">
+            <input type="button" Id="no" onmouseover="No()" value="Rejected">
         </div>
     </form>
 
